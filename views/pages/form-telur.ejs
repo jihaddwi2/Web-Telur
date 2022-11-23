@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header bg-warning">
+            <h4>Form Telur</h4>
+        </div>
+        <div class="card-body">
+            <form action="<%= targetRoute %>" method="post">
+                Jenis
+                <select name="jenis_telur" class="form-control" required>
+                    <option value="">--Pilih Jenis telur--</option>
+                    <option value="ayam_kampung">Ayam_Kampung</option>
+                    <option value="bebek_kampung">Bebek_kampung</option>
+                    <option value="angsa">Angsa</option>
+                </select>
+                Stok
+                <input type="number" name="stok" id="stok" class="form-control" value="<%= stok %>" required />
+
+                Harga
+                <input type="number" name="harga" id="harga" class="form-control" value="<%= harga %>" required />
+
+                <button type="submit" class="btn btn-success mt-2">
+                    Simpan
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

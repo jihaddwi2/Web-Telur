@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header bg-warning">
+            <h4>Form Pack</h4>
+        </div>
+        <div class="card-body">
+            <form action="<%= targetRoute %>" method="post">
+                Jenis Pack
+                <select name="nama_pack" class="form-control" required>
+                    <option value="">--Pilih Jenis Pack--</option>
+                    <option value="kardus">Kardus</option>
+                    <option value="Kayu">Kayu</option>
+                    <option value="Plastik">Plastik</option>
+                </select>
+            
+                Harga
+                <input type="number" name="harga" id="harga" class="form-control" value="<%= harga %>" required />
+
+                <button type="submit" class="btn btn-success mt-2">
+                    Simpan
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
